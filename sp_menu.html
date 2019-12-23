@@ -1,0 +1,132 @@
+<div class="spOnly" id="spMenu">
+		<label class="toggle" for="open"><i class="iconMenu"></i></label>
+		<input id="open" type="checkbox">
+		<div id="slideMenu">
+				<ul>
+						<li class="lev1">
+								<label for="sldMenu_bar1"><i class="iconSegment icon_segm01og"></i>観る<i class="iconExpand"></i></label>
+								<input type="radio" name="radio" id="sldMenu_bar1" class="accordion" />
+								<ul class="hideSumbMenue">
+										<li><a href="#">建築物</a></li>
+										<li><a href="#">自然・景観</a></li>
+										<li><a href="#">文化・芸術</a></li>
+										<li><a href="#">神社・仏閣</a></li>
+										<li><a href="#">その他</a></li>
+								</ul>
+						</li>
+						<li class="lev1">
+								<label for="sldMenu_bar2"><i class="iconSegment icon_segm02og"></i>食べる<i class="iconExpand"></i></label>
+								<input type="radio" name="radio" id="sldMenu_bar2" class="accordion" />
+								<ul class="hideSumbMenue">
+										<li><a href="#">居酒屋・バー</a></li>
+										<li><a href="#">ラーメン</a></li>
+										<li><a href="#">カフェ・スイーツ</a></li>
+										<li><a href="#">和食</a></li>
+										<li><a href="#">洋食</a></li>
+										<li><a href="#">海外料理</a></li>
+										<li><a href="#">その他</a></li>
+								</ul>
+						</li>
+						<li class="lev1">
+								<label for="sldMenu_bar3"><i class="iconSegment icon_segm03og"></i>遊ぶ<i class="iconExpand"></i></label>
+								<input type="radio" name="radio" id="sldMenu_bar3" class="accordion" />
+								<ul class="hideSumbMenue">
+										<li><a href="#">アウトドア</a></li>
+										<li><a href="#">人・生活</a></li>
+										<li><a href="#">体験イベント</a></li>
+										<li><a href="#">歴史</a></li>
+										<li><a href="#">祭り・行事</a></li>
+										<li><a href="#">その他</a></li>
+								</ul>
+						</li>
+						<li class="lev1">
+								<label for="sldMenu_bar4"><i class="iconSegment icon_segm04og"></i>泊まる<i class="iconExpand"></i></label>
+								<input type="radio" name="radio" id="sldMenu_bar4" class="accordion" />
+								<ul class="hideSumbMenue">
+										<li><a href="#">旅館・ホテル</a></li>
+										<li><a href="#">民泊・ゲストハウス</a></li>
+										<li><a href="#">貸別荘</a></li>
+										<li><a href="#">その他</a></li>
+								</ul>
+						</li>
+						<li class="lev1">
+								<label for="sldMenu_bar5"><i class="iconSegment icon_segm05og"></i>買う<i class="iconExpand"></i></label>
+								<input type="radio" name="radio" id="sldMenu_bar5" class="accordion" />
+								<ul class="hideSumbMenue">
+										<li><a href="#">お土産</a></li>
+										<li><a href="#">雑貨・民芸品</a></li>
+										<li><a href="#">その他</a></li>
+								</ul>
+						</li>
+						<li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_topic.svg" alt="注目記事"></i>注目記事</a></li>
+						<li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_ favorite.svg" alt="お気に入り"></i>お気に入り</a></li>
+						<li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_clender.svg" alt="吉野カレンダー"></i>吉野カレンダー</a></li>
+						<li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_access.svg" alt="アクセス"></i>アクセス</a></li>
+						<li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_shop.svg" alt="オンラインショップ"></i>オンラインショップ</a></li>
+						<li class="lev3"><a href="#">外国人旅行者の方へ</a></li>
+						<li class="lev3"><a href="#">外部リンク集</a></li>
+						<li class="lev3"><a href="#">お問い合わせ</a></li>
+						<li class="lev3"><a href="#">利用規約・プライバシーポリシー</a></li>
+				</ul>
+		</div>
+        <div id="searchBoxSp">
+	            <form method="get" action="#" class="search_container">
+	              <input type="text" size="25" placeholder="フリーワード">
+	              <input type="submit" value="">
+	            </form>
+        </div>
+        <div id="btnLangSp">
+	            <form method="post" action="">
+	                <select name="gengo" id="language">
+	                    <option value="japanese">JAPANESE</option>
+	                    <option value="english">ENGLISH</option>
+	                    <option value="chinese">CHINESE</option>
+	                    <option value="french">FRENCH</option>
+	                </select>
+	            </form>
+        </div>
+        <div id="btnLoginSp">ログイン／新規登録</div>
+</div>
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+ 
+li {
+  list-style: none;
+}
+ 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+#menu {
+  position: fixed;
+  top: 0;
+  right: -340px; /* メニューのwidth + padding */
+  width: 300px; /* メニューのwidth */
+  height: 100%;
+  padding: 20px;
+  transition: left .5s, right .5s; /* アニメーション */
+  background-color: rgba(86, 86, 86, .7);
+}
+ 
+.toggle {
+  font-size: 50px;
+  cursor: pointer;
+}
+ 
+.toggle:hover {
+  text-decoration: underline;
+}
+ 
+#open {
+  display: none;
+}
+ 
+/* :checked 擬似クラスを使って、#openがチェック状態になった時に、#menuが「right: 0;」になります。 */
+#open:checked + #menu {
+  right: 0;
+}

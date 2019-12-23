@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>よしのーと！</title>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_sp.css">
+	</head>
+    
+	<body class="topPage">
+		
+      <!-- 共通ヘッダー -->
+      <header class="header">
+          <div class="row flxbox">
+            <h1><a href="index.html"><img src="images/logo_yoshinote.svg" alt="よしのーと！"></a></h1>
+              
+            <!-- モバイル用スライドメニュー -->
+            <div class="spOnly" id="spMenu">
+                <label class="toggle" for="openSL"><i class="iconMenu"><img src="images/ic_menu.svg" alt="open"></i></label>
+                <input id="openSL" type="checkbox">
+                <div id="slideMenu">
+                    <label class="toggle" for="openSL"><i class="iconMenu"><img src="images/ic_close.svg" alt="open"></i></label>
+                    <ul>
+                        <li class="lev1">
+                                <label for="sldMenu_bar1"><i class="iconSegment icon_segm01og"></i>観る<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar1" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList01">
+                                        <li><a href="#">建築物</a></li>
+                                        <li><a href="#">自然・景観</a></li>
+                                        <li><a href="#">文化・芸術</a></li>
+                                        <li><a href="#">神社・仏閣</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar2"><i class="iconSegment icon_segm02og"></i>食べる<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar2" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList02">
+                                        <li><a href="#">居酒屋・バー</a></li>
+                                        <li><a href="#">ラーメン</a></li>
+                                        <li><a href="#">カフェ・スイーツ</a></li>
+                                        <li><a href="#">和食</a></li>
+                                        <li><a href="#">洋食</a></li>
+                                        <li><a href="#">海外料理</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar3"><i class="iconSegment icon_segm03og"></i>遊ぶ<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar3" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList03">
+                                        <li><a href="#">アウトドア</a></li>
+                                        <li><a href="#">人・生活</a></li>
+                                        <li><a href="#">体験イベント</a></li>
+                                        <li><a href="#">歴史</a></li>
+                                        <li><a href="#">祭り・行事</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar4"><i class="iconSegment icon_segm04og"></i>泊まる<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar4" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList04">
+                                        <li><a href="#">旅館・ホテル</a></li>
+                                        <li><a href="#">民泊・ゲストハウス</a></li>
+                                        <li><a href="#">貸別荘</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar5"><i class="iconSegment icon_segm05og"></i>買う<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar5" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList05">
+                                        <li><a href="#">お土産</a></li>
+                                        <li><a href="#">雑貨・民芸品</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_topic.svg" alt="注目記事"></i>注目記事</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_ favorite.svg" alt="お気に入り"></i>お気に入り</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_clender.svg" alt="吉野カレンダー"></i>吉野カレンダー</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_access.svg" alt="アクセス"></i>アクセス</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_shop.svg" alt="オンラインショップ"></i>オンラインショップ</a></li>
+                        <li class="lev3"><a href="#">外国人旅行者の方へ</a></li>
+                        <li class="lev3"><a href="#">外部リンク集</a></li>
+                        <li class="lev3"><a href="#">お問い合わせ</a></li>
+                            <li class="lev3"><a href="#">利用規約・プライバシーポリシー</a></li>
+                    </ul>
+                    <div id="searchBoxSp">
+                        <form method="get" action="#" class="search_container">
+                          <input type="text" size="25" placeholder="フリーワード">
+                          <input type="submit" value="">
+                        </form>
+                    </div>
+                    <div id="btnLangSp">
+                        <form method="post" action="">
+                            <select name="gengo" id="languageSp">
+                                <option value="japanese">JAPANESE</option>
+                                <option value="english">ENGLISH</option>
+                                <option value="chinese">CHINESE</option>
+                                <option value="french">FRENCH</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="btnLoginSp">ログイン／新規登録</div>
+                </div><!-- #slideMenu -->
+            </div><!-- モバイル用スライドメニューここまで -->
+              
+            <!-- モバイル用ボタン -->
+            <ul class="spOnly" id="btnHeaderSp">
+                  <li id="btnCalenderSp"><a href="#">吉野カレンダー</a></li>
+                  <li id="btnTopicsSp"><a href="#">注目記事</a></li>
+            </ul>
+              
+            <!-- PC用ボタン右上 -->
+            <div id="gMenuPC" class="pcOnly">
+                <ul id="gMenuPC1" class="flxbox">
+                    <li id="btnLang">
+                        <form method="post" action="">
+                            <select name="gengo" id="language">
+                                <option value="japanese">JAPANESE</option>
+                                <option value="english">ENGLISH</option>
+                                <option value="chinese">CHINESE</option>
+                                <option value="french">FRENCH</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li id="btnLogin">ログイン／新規登録</li>
+                </ul>
+                <ul id="gMenuPC2" class="flxbox">
+                    <li id="btnCalender"><a href="#">吉野カレンダー</a></li>
+                    <li id="btnAccess"><a href="#">アクセス</a></li>
+                    <li id="btnShop"><a href="#">オンラインショップ</a></li>
+                    <li id="btnTopics"><a href="#">注目記事</a></li>
+                    <li id="btnFavorite"><a href="#">お気に入り</a></li>
+                </ul>
+            </div>
+          </div>
+      </header>
+		
+		<main class="topPageCont">
+		
+			<section id="topTitTopPage" class="row">
+			
+				<div id="topVisualArea">
+					<img src="images/top_visual01.jpg" alt="吉野の旅" id="topVisualimg">
+					<div id="bunnerTNQL" class="pcOnly">
+						<h3>今日の天気<br>吉野</h3>
+						<i class="iconWeather"><img src="images/icon_wether001.png" alt="sunny"></i>
+						<p class="temperature">26˚/18˚</p>
+						<div id="logoTNQL"><img src="images/TNQL_logo_white@2x.png" alt="TNQL"></div>
+						<p class="bunnCopy">天気情報×服装を見る</p>
+					</div>
+					<div id="btnRecomend" class="flxbox">
+						<h2>自慢のカメラを持って！吉野の“映え”スポット10選</h2>
+						<div class="segment"><i class="iconSegment icon-icon_camera"></i>自然・景観</div>
+					</div>
+				</div><!--/#topVisualArea -->
+				
+				<nav id="segMenuArea" class="row">
+					<div class="flxbox">
+			            <ul id="segMenu" class="flxbox">
+			                <li class="upperMenu">
+			                  <input id="acd-check1" class="acd-check" type="checkbox">
+			                  <label class="acd-label" for="acd-check1"><i class="iconSegment icon_segm01"></i>観る<i class="iconExpand"></i></label>
+			                  <ul class="submenu acd-content" id="acd-List1">
+			                      <li class="submenuItem"><a href="#">建築物</a></li>
+			                      <li class="submenuItem"><a href="#">自然・景観</a></li>
+			                      <li class="submenuItem"><a href="#">文化・芸術</a></li>
+			                      <li class="submenuItem"><a href="#">神社・仏閣</a></li>
+			                      <li class="submenuItem"><a href="#">その他</a></li>
+			                  </ul>
+			              </li>
+			              <li class="upperMenu">
+			                  <input id="acd-check2" class="acd-check" type="checkbox">
+			                  <label class="acd-label" for="acd-check2"><i class="iconSegment icon_segm02"></i>食べる<i class="iconExpand"></i></label>
+			                  <ul class="submenu acd-content" id="acd-List2">
+			                      <li class="submenuItem"><a href="#">居酒屋・バー</a></li>
+			                      <li class="submenuItem"><a href="#">ラーメン</a></li>
+			                      <li class="submenuItem"><a href="#">カフェ・スイーツ</a></li>
+			                      <li class="submenuItem"><a href="#">和食</a></li>
+			                      <li class="submenuItem"><a href="#">洋食</a></li>
+			                      <li class="submenuItem"><a href="#">海外料理</a></li>
+			                      <li class="submenuItem"><a href="#">その他</a></li>
+			                  </ul>
+			              </li>
+			              <li class="upperMenu">
+			                  <input id="acd-check3" class="acd-check" type="checkbox">
+			                  <label class="acd-label" for="acd-check3"><i class="iconSegment icon_segm03"></i>遊ぶ<i class="iconExpand"></i></label>
+			                  <ul class="submenu acd-content" id="acd-List3">
+			                      <li class="submenuItem"><a href="#">アウトドア</a></li>
+			                      <li class="submenuItem"><a href="#">人・生活</a></li>
+			                      <li class="submenuItem"><a href="#">体験イベント</a></li>
+			                      <li class="submenuItem"><a href="#">歴史</a></li>
+			                      <li class="submenuItem"><a href="#">祭り・行事</a></li>
+			                      <li class="submenuItem"><a href="#">その他</a></li>
+			                  </ul>
+			              </li>
+			              <li class="upperMenu">
+			                  <input id="acd-check4" class="acd-check" type="checkbox">
+			                  <label class="acd-label" for="acd-check4"><i class="iconSegment icon_segm04"></i>泊まる<i class="iconExpand"></i></label>
+			                  <ul class="submenu acd-content" id="acd-List4">
+			                      <li class="submenuItem"><a href="#">旅館・ホテル</a></li>
+			                      <li class="submenuItem"><a href="#">民泊・ゲストハウス</a></li>
+			                      <li class="submenuItem"><a href="#">貸別荘</a></li>
+			                      <li class="submenuItem"><a href="#">その他</a></li>
+			                  </ul>
+			              </li>
+			              <li class="upperMenu">
+			                  <input id="acd-check5" class="acd-check" type="checkbox">
+			                  <label class="acd-label" for="acd-check5"><i class="iconSegment icon_segm05"></i>買う<i class="iconExpand"></i></label>
+			                  <ul class="submenu acd-content" id="acd-List5">
+			                      <li class="submenuItem"><a href="#">お土産</a></li>
+			                      <li class="submenuItem"><a href="#">雑貨・民芸品</a></li>
+			                      <li class="submenuItem"><a href="#">その他</a></li>
+			                  </ul>
+			              </li>
+			            </ul>
+			            <div id="searchBox" class="pcOnly">
+			                <form method="get" action="#" class="search_container">
+			                  <input type="text" size="25" placeholder="フリーワード">
+			                  <input type="submit" value="">
+			                </form>
+			            </div>
+                    </div>
+				</nav><!-- /#segMenuArea -->
+			
+			</section><!-- #topTitTopPage -->
+            
+            <div id="bunnerTNQLsp" class="spOnly row">
+				<h3>今日の天気<br>吉野</h3>
+                <i class="iconWeather"><img src="images/icon_wether001.png" alt="sunny"></i>
+                <div>
+                    <p class="temperature">26˚/18˚</p>
+                    <p class="bunnCopy">天気情報×服装を見る</p>
+                </div>
+                <div id="logoTNQL"><img src="images/TNQL_logo_white@2x.png" alt="TNQL"></div>
+            </div>
+			
+			<section id="recomendCont" class="topList row">
+				<h3>あなたへのおすすめ</h3>
+				<div class="set2-1 flxbox boxArea">
+					<div class="box col2">
+						<div class="imgArea">
+							<img src="images/img_seg03_01.jpg" alt="祭り・行事">
+							<div class="segment"><i class="iconSegment icon_segm03"></i>祭り・行事</div>
+						</div>
+						<div class="copyArea">
+							<h5>どこで綺麗に見れた？混雑した時間帯は？<br>吉野ふるさと元気祭り2019花火大会</h5>
+							<i class="faverit"></i>
+						</div>
+					</div>
+					<div class="set1-2">
+						<div class="box col1">
+                          <div class="imgArea">
+                              <img src="images/img_seg03_02.jpg" alt="体験・イベント">
+                              <div class="segment"><i class="iconSegment icon_segm03"></i>体験・イベント</div>
+                          </div>
+                          <div class="copyArea">
+                              <h5>心を癒す「森林セラピー」を<br>吉野で体験してみた</h5>
+                          </div>
+                        </div>
+						<div class="box col1">
+                              <div class="imgArea">
+                                 <img src="images/img_seg05_01.jpg" alt="お土産">
+                                 <div class="segment"><i class="iconSegment icon_segm05"></i>お土産</div>
+                              </div>
+                              <div class="copyArea">
+                                     <h5>吉野名物！おすすめ土産まとめ</h5>
+                                     <i class="faverit"></i>
+                              </div>
+                        </div>
+					</div>
+				</div>
+                <div class="set3-1 flxbox boxArea">
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg02_01.jpg" alt="和食">
+                          <div class="segment"><i class="iconSegment icon_segm02"></i>和食</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>日常では味わえない宿坊体験のすすめ</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg01_01.jpg" alt="神社・仏閣">
+                          <div class="segment"><i class="iconSegment icon_segm01"></i>神社・仏閣</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>吉野でレンタサイクルしてみた！<br>おすすめコースもご紹介</h5>
+                          <i class="faverit"></i>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_02.jpg" alt="建築物">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>建築物</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>ファミリー向け！吉野の温泉めぐり</h5>
+                      </div>
+                    </div>
+                </div>
+			</section>
+			
+			<section id="latestCont" class="topList row">
+				<h3>最新の記事</h3>
+                <div class="set3-1 flxbox boxArea">
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_03.jpg" alt="祭り">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>カルチャー</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>日常では味わえない宿坊体験のすすめ</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_04.jpg" alt="祭り">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>体験・イベント</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>吉野でレンタサイクルしてみた！<br>おすすめコースもご紹介</h5>
+                          <i class="faverit"></i>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg04_01.jpg" alt="旅館・ホテル">
+                          <div class="segment"><i class="iconSegment icon_segm04"></i>旅館・ホテル</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>ファミリー向け！吉野の温泉めぐり</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_05.jpg" alt="体験イベント">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>体験イベント</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>日常では味わえない宿坊体験のすすめ</h5>
+                          <i class="faverit"></i>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg05_01.jpg" alt="お土産">
+                          <div class="segment"><i class="iconSegment icon_segm05"></i>お土産</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>【2019年】<br>吉野の最新お土産情報</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg02_03.jpg" alt="ラーメン">
+                          <div class="segment"><i class="iconSegment icon_segm02"></i>ラーメン</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>吉野の山奥にひっそりと佇む<br>絶品ラーメン店とは</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_03.jpg" alt="祭り">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>カルチャー</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>日常では味わえない宿坊体験のすすめ</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_04.jpg" alt="祭り">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>体験・イベント</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>吉野でレンタサイクルしてみた！<br>おすすめコースもご紹介</h5>
+                          <i class="faverit"></i>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg04_01.jpg" alt="旅館・ホテル">
+                          <div class="segment"><i class="iconSegment icon_segm04"></i>旅館・ホテル</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>ファミリー向け！吉野の温泉めぐり</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg03_05.jpg" alt="体験イベント">
+                          <div class="segment"><i class="iconSegment icon_segm03"></i>体験イベント</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>日常では味わえない宿坊体験のすすめ</h5>
+                          <i class="faverit"></i>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg05_01.jpg" alt="お土産">
+                          <div class="segment"><i class="iconSegment icon_segm05"></i>お土産</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>【2019年】<br>吉野の最新お土産情報</h5>
+                      </div>
+                    </div>
+                    <div class="box col1">
+                      <div class="imgArea">
+                          <img src="images/img_seg02_03.jpg" alt="ラーメン">
+                          <div class="segment"><i class="iconSegment icon_segm02"></i>ラーメン</div>
+                      </div>
+                      <div class="copyArea">
+                          <h5>吉野の山奥にひっそりと佇む<br>絶品ラーメン店とは</h5>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="btnMore">もっと記事を見る</div>
+		
+		</main>
+		
+		<!-- 共通フッターここから -->
+	    <footer>
+
+          <div id="footer01" class="pcOnly">
+              <nav id="siteMap" class="row flxbox">
+                  <ul>
+                      <h4>観る</h4>
+                      <li class="navLev2"><a href="#">建築物</a></li>
+                      <li class="navLev2"><a href="#">自然・景観</a></li>
+                      <li class="navLev2"><a href="#">文化・芸術</a></li>
+                      <li class="navLev2"><a href="#">神社・仏閣</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>食べる</h4>
+                      <li class="navLev2"><a href="#">居酒屋・バー</a></li>
+                      <li class="navLev2"><a href="#">ラーメン</a></li>
+                      <li class="navLev2"><a href="#">カフェ・スイーツ</a></li>
+                      <li class="navLev2"><a href="#">和食</a></li>
+                      <li class="navLev2"><a href="#">洋食</a></li>
+                      <li class="navLev2"><a href="#">海外料理</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>遊ぶ</h4>
+                      <li class="navLev2"><a href="#">アウトドア</a></li>
+                      <li class="navLev2"><a href="#">人・生活</a></li>
+                      <li class="navLev2"><a href="#">体験イベント</a></li>
+                      <li class="navLev2"><a href="#">歴史</a></li>
+                      <li class="navLev2"><a href="#">祭り・行事</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>泊まる</h4>
+                      <li class="navLev2"><a href="#">旅館・ホテル</a></li>
+                      <li class="navLev2"><a href="#">民泊・ゲストハウス</a></li>
+                      <li class="navLev2"><a href="#">貸別荘</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>買う</h4>
+                      <li class="navLev2"><a href="#">お土産</a></li>
+                      <li class="navLev2"><a href="#">雑貨・民芸品</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <li class="navLev1"><a href="#">吉野カレンダー</a></li>
+                      <li class="navLev1"><a href="#">アクセス</a></li>
+                      <li class="navLev1"><a href="#">オンラインショップ</a></li>
+                      <li class="navLev1"><a href="#">外国人旅行者の方へ</a></li>
+                      <li class="navLev2"><a href="#">吉野旅行の基本情報</a></li>
+                      <li class="navLev2"><a href="#">日本のマナー・習慣</a></li>
+                  </ul>
+                  <ul>
+                      <li class="navLev3"><a href="#">外部リンク集</a></li>
+                      <li class="navLev3"><a href="#">お問い合わせ</a></li>
+                      <li class="navLev3"><a href="#">利用規約・プライバシーポリシー</a></li>
+                  </ul>
+              </nav>
+          </div>
+
+          <div id="footer02">
+              <div id="organiz" class="flxbox row">
+                  <div class="ognzData">
+                      <h5>一般社団法人 吉野ビジターズビューロー</h5>
+                      <p>〒639-3111 奈良県吉野郡吉野町上市77-1</p>
+                      <p>
+                          <span class="phone">0746-34-2522</span>
+                          <span class="fax">0746-39-9238</span>
+                          <span class="email"><a href="mailto:info@yoshino-kankou.jp">info@yoshino-kankou.jp</a></span>
+                      </p>
+                  </div>
+                  <div class="ognzData">
+                      <h5>株式会社ルグラン</h5>
+                      <p>〒150-0042 東京都渋谷区宇田川町2-1 13F 1312</p>
+                      <p>
+                          <span class="phone">03-6416-9845</span>
+                          <span class="fax">03-6416-9846</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="trueFooter">&copy; Yoshino visitors Bureau, All Rights Reserved.</div>
+
+      </footer>
+        
+        <!-- Sccript File -->
+        <script type="text/javascript" src="js/ofi.js"></script>	
+        <script>objectFitImages();</script>
+        
+    </body>
+</html>

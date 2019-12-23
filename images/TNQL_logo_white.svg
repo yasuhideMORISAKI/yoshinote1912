@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="21" viewBox="0 0 47 21">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 192 84">
+      <image width="192" height="84" xlink:href="../../../../Dropbox/%E5%90%89%E9%87%8E%E8%A6%B3%E5%85%89%E6%8C%AF%E8%88%88%E3%82%B5%E3%82%A4%E3%83%88/Design%20File/source%20files/TNQL_logo_white.png"/>
+    </pattern>
+  </defs>
+  <rect id="TNQL_logo_white" width="47" height="21" fill="url(#pattern)"/>
+</svg>

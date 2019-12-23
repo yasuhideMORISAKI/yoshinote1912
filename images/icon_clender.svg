@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon_clender" transform="translate(-304 -242)">
+    <rect id="Path" width="24" height="24" transform="translate(304 242)" fill="rgba(0,0,0,0)"/>
+    <path id="Icon" d="M323,264H309a2,2,0,0,1-2-2l.01-14a2,2,0,0,1,1.99-2h1v-1a1,1,0,0,1,2,0v1h8v-1a1,1,0,0,1,2,0v1h1a2,2,0,0,1,2,2v14A2,2,0,0,1,323,264Zm-14-13h0v10a1,1,0,0,0,1,1h12a1,1,0,0,0,1-1V251Zm12,4h-2v-2h2v2Zm-4,0h-2v-2h2v2Zm-4,0h-2v-2h2v2Z" fill="#99c443"/>
+  </g>
+</svg>
