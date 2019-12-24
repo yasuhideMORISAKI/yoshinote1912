@@ -339,14 +339,13 @@ body.regulerPage nav#segMenuArea ul#segMenu li.upperMenu:first-child label.acd-l
 }
 nav#segMenuArea ul.submenu {
     width: 100%;
-    margin-top: 0.4em;
+    margin-top: 0em;
     padding: 0em 0.8em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
     text-align: left;
     font-size: 0.81rem;
-    line-height: 2em;
     background-color: rgba(0,0,0,0.60);
     position: relative;
     z-index: 10;
@@ -357,20 +356,17 @@ nav#segMenuArea ul.submenu {
     transition: .5s;
     visibility: hidden;
 }
-/*.acd-check:checked + .acd-label + .acd-content{
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-}*/
 #acd-check1:checked ~ ul#acd-List1 li,
 #acd-check2:checked ~ ul#acd-List2 li,
 #acd-check3:checked ~ ul#acd-List3 li,
 #acd-check4:checked ~ ul#acd-List4 li,
 #acd-check5:checked ~ ul#acd-List5 li {
-    max-height:8em;
+    max-height:10em;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
     opacity: 1;
     visibility: visible;
-}
+6}
 
 nav#segMenuArea ul.submenu li a {
     color: #fff;
@@ -772,20 +768,18 @@ main.regulerPageCont {
 }
 .contentsArea article#mainContent ul.snsArea li {
     width: 23%;
-    height: 3em;
+    height: 2em;
+    padding-top: 1em;
     color: #fff;
     font-size: 0.81rem;
-    line-height: 100%;
-    vertical-align: middle;
     display: flex;
     background-color: #333;
     border-radius: 8px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
 .contentsArea article#mainContent ul.snsArea li i {
     margin-right: 0.4em;
-    vertical-align: middle;
 }
 .contentsArea article#mainContent ul.snsArea li:hover {
     cursor: pointer;
