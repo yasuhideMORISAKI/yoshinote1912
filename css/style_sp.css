@@ -400,4 +400,26 @@
         margin-bottom: 2em;
         margin-left: 2em;
     }
+    
+    /* TNQL page */
+    ul#tenqlCordinate {
+        height:auto;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+    ul#tenqlCordinate li {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul#tenqlCordinate li .weatherArea {
+        width: 80%;
+        margin-bottom: 2em;
+    }
+    ul#tenqlCordinate li .weatherArea img {
+        width: 36vw;
+    }
+    ul#tenqlCordinate li .cordinateArea {
+        width: 100vw;
+    }
 }

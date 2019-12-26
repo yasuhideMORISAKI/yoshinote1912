@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>TNQL | よしのーと！</title>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_sp.css">
+</head>
+
+  <body class="regulerPage">
+		
+      <!-- 共通ヘッダー -->
+      <header class="header">
+          <div class="row flxbox">
+            <h1><a href="index.html"><img src="images/logo_yoshinote.svg" alt="よしのーと！"></a></h1>
+              
+            <!-- モバイル用スライドメニュー -->
+            <div class="spOnly" id="spMenu">
+                <label class="toggle" for="openSL"><i class="iconMenu"><img src="images/ic_menu.svg" alt="open"></i></label>
+                <input id="openSL" type="checkbox">
+                <div id="slideMenu">
+                    <label class="toggle" for="openSL"><i class="iconMenu"><img src="images/ic_close.svg" alt="open"></i></label>
+                    <ul>
+                        <li class="lev1">
+                                <label for="sldMenu_bar1"><i class="iconSegment icon_segm01og"></i>観る<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar1" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList01">
+                                        <li><a href="#">建築物</a></li>
+                                        <li><a href="#">自然・景観</a></li>
+                                        <li><a href="#">文化・芸術</a></li>
+                                        <li><a href="#">神社・仏閣</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar2"><i class="iconSegment icon_segm02og"></i>食べる<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar2" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList02">
+                                        <li><a href="#">居酒屋・バー</a></li>
+                                        <li><a href="#">ラーメン</a></li>
+                                        <li><a href="#">カフェ・スイーツ</a></li>
+                                        <li><a href="#">和食</a></li>
+                                        <li><a href="#">洋食</a></li>
+                                        <li><a href="#">海外料理</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar3"><i class="iconSegment icon_segm03og"></i>遊ぶ<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar3" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList03">
+                                        <li><a href="#">アウトドア</a></li>
+                                        <li><a href="#">人・生活</a></li>
+                                        <li><a href="#">体験イベント</a></li>
+                                        <li><a href="#">歴史</a></li>
+                                        <li><a href="#">祭り・行事</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar4"><i class="iconSegment icon_segm04og"></i>泊まる<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar4" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList04">
+                                        <li><a href="#">旅館・ホテル</a></li>
+                                        <li><a href="#">民泊・ゲストハウス</a></li>
+                                        <li><a href="#">貸別荘</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev1">
+                                <label for="sldMenu_bar5"><i class="iconSegment icon_segm05og"></i>買う<i class="iconExpand"></i></label>
+                                <input type="radio" name="radio" id="sldMenu_bar5" class="accordion" />
+                                <ul class="hideSumbMenue" id="hList05">
+                                        <li><a href="#">お土産</a></li>
+                                        <li><a href="#">雑貨・民芸品</a></li>
+                                        <li><a href="#">その他</a></li>
+                                </ul>
+                        </li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_topic.svg" alt="注目記事"></i>注目記事</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_ favorite.svg" alt="お気に入り"></i>お気に入り</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_clender.svg" alt="吉野カレンダー"></i>吉野カレンダー</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_access.svg" alt="アクセス"></i>アクセス</a></li>
+                        <li class="lev2"><a href="#"><i class="iconCont"><img src="images/icon_shop.svg" alt="オンラインショップ"></i>オンラインショップ</a></li>
+                        <li class="lev3"><a href="#">外国人旅行者の方へ</a></li>
+                        <li class="lev3"><a href="#">外部リンク集</a></li>
+                        <li class="lev3"><a href="#">お問い合わせ</a></li>
+                            <li class="lev3"><a href="#">利用規約・プライバシーポリシー</a></li>
+                    </ul>
+                    <div id="searchBoxSp">
+                        <form method="get" action="#" class="search_container">
+                          <input type="text" size="25" placeholder="フリーワード">
+                          <input type="submit" value="">
+                        </form>
+                    </div>
+                    <div id="btnLangSp">
+                        <form method="post" action="">
+                            <select name="gengo" id="languageSp">
+                                <option value="japanese">JAPANESE</option>
+                                <option value="english">ENGLISH</option>
+                                <option value="chinese">CHINESE</option>
+                                <option value="french">FRENCH</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="btnLoginSp">ログイン／新規登録</div>
+                </div><!-- #slideMenu -->
+            </div><!-- モバイル用スライドメニューここまで -->
+              
+            <!-- モバイル用ボタン -->
+            <ul class="spOnly" id="btnHeaderSp">
+                  <li id="btnCalenderSp"><a href="#">吉野カレンダー</a></li>
+                  <li id="btnTopicsSp"><a href="#">注目記事</a></li>
+            </ul>
+              
+            <!-- PC用ボタン右上 -->
+            <div id="gMenuPC" class="pcOnly">
+                <ul id="gMenuPC1" class="flxbox">
+                    <li id="btnLang">
+                        <form method="post" action="">
+                            <select name="gengo" id="language">
+                                <option value="japanese">JAPANESE</option>
+                                <option value="english">ENGLISH</option>
+                                <option value="chinese">CHINESE</option>
+                                <option value="french">FRENCH</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li id="btnLogin">ログイン／新規登録</li>
+                </ul>
+                <ul id="gMenuPC2" class="flxbox">
+                    <li id="btnCalender"><a href="#">吉野カレンダー</a></li>
+                    <li id="btnAccess"><a href="#">アクセス</a></li>
+                    <li id="btnShop"><a href="#">オンラインショップ</a></li>
+                    <li id="btnTopics"><a href="#">注目記事</a></li>
+                    <li id="btnFavorite"><a href="#">お気に入り</a></li>
+                </ul>
+            </div>
+          </div>
+      </header>
+				
+      <!-- 共通セグメントメニュー -->
+      <nav id="segMenuArea">
+          <div class="flxbox row">
+            <ul id="segMenu" class="flxbox">
+                <li class="upperMenu">
+                  <input id="acd-check1" class="acd-check" type="checkbox">
+                  <label class="acd-label" for="acd-check1"><i class="iconSegment icon_segm01"></i>観る<i class="iconExpand"></i></label>
+                  <ul class="submenu acd-content" id="acd-List1">
+                      <li class="submenuItem"><a href="#">建築物</a></li>
+                      <li class="submenuItem"><a href="#">自然・景観</a></li>
+                      <li class="submenuItem"><a href="#">文化・芸術</a></li>
+                      <li class="submenuItem"><a href="#">神社・仏閣</a></li>
+                      <li class="submenuItem"><a href="#">その他</a></li>
+                  </ul>
+              </li>
+              <li class="upperMenu">
+                  <input id="acd-check2" class="acd-check" type="checkbox">
+                  <label class="acd-label" for="acd-check2"><i class="iconSegment icon_segm02"></i>食べる<i class="iconExpand"></i></label>
+                  <ul class="submenu acd-content" id="acd-List2">
+                      <li class="submenuItem"><a href="#">居酒屋・バー</a></li>
+                      <li class="submenuItem"><a href="#">ラーメン</a></li>
+                      <li class="submenuItem"><a href="#">カフェ・スイーツ</a></li>
+                      <li class="submenuItem"><a href="#">和食</a></li>
+                      <li class="submenuItem"><a href="#">洋食</a></li>
+                      <li class="submenuItem"><a href="#">海外料理</a></li>
+                      <li class="submenuItem"><a href="#">その他</a></li>
+                  </ul>
+              </li>
+              <li class="upperMenu">
+                  <input id="acd-check3" class="acd-check" type="checkbox">
+                  <label class="acd-label" for="acd-check3"><i class="iconSegment icon_segm03"></i>遊ぶ<i class="iconExpand"></i></label>
+                  <ul class="submenu acd-content" id="acd-List3">
+                      <li class="submenuItem"><a href="#">アウトドア</a></li>
+                      <li class="submenuItem"><a href="#">人・生活</a></li>
+                      <li class="submenuItem"><a href="#">体験イベント</a></li>
+                      <li class="submenuItem"><a href="#">歴史</a></li>
+                      <li class="submenuItem"><a href="#">祭り・行事</a></li>
+                      <li class="submenuItem"><a href="#">その他</a></li>
+                  </ul>
+              </li>
+              <li class="upperMenu">
+                  <input id="acd-check4" class="acd-check" type="checkbox">
+                  <label class="acd-label" for="acd-check4"><i class="iconSegment icon_segm04"></i>泊まる<i class="iconExpand"></i></label>
+                  <ul class="submenu acd-content" id="acd-List4">
+                      <li class="submenuItem"><a href="#">旅館・ホテル</a></li>
+                      <li class="submenuItem"><a href="#">民泊・ゲストハウス</a></li>
+                      <li class="submenuItem"><a href="#">貸別荘</a></li>
+                      <li class="submenuItem"><a href="#">その他</a></li>
+                  </ul>
+              </li>
+              <li class="upperMenu">
+                  <input id="acd-check5" class="acd-check" type="checkbox">
+                  <label class="acd-label" for="acd-check5"><i class="iconSegment icon_segm05"></i>買う<i class="iconExpand"></i></label>
+                  <ul class="submenu acd-content" id="acd-List5">
+                      <li class="submenuItem"><a href="#">お土産</a></li>
+                      <li class="submenuItem"><a href="#">雑貨・民芸品</a></li>
+                      <li class="submenuItem"><a href="#">その他</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <div id="searchBox" class="pcOnly">
+                <form method="get" action="#" class="search_container">
+                  <input type="text" size="25" placeholder="フリーワード">
+                  <input type="submit" value="">
+                </form>
+            </div>
+          </div>
+      </nav><!-- /#segMenuArea -->
+      
+      <!-- ページコンテンツここから -->
+      <main class="regulerPageCont">
+      
+          <!-- パンくずリスト -->
+          <ul id="breadcrumbs" class="flxbox row">
+            <li><a href="index.html">トップ</a></li>
+            <li>　＞　</li>
+            <li>TNQL</li>
+          </ul>
+          
+          <div class="titPageTnql row">
+              <h2>吉野のお天気とオススメコーデをチェック！</h2>
+          </div>
+
+          <section class="row" id="tnqlCont1">
+              <div class="cordinateArea">
+                  <ul id="tenqlCordinate" class="row">
+                      <li>
+                          <div class="weatherArea">
+                              <h4>吉野</h4>
+                              <p class="date">12月25日</p>
+                              <img src="images/wether_icon/icon_day01_04.svg" alt="晴れのち曇り">
+                              <p class="wether">晴れのち曇り</p>
+                              <p class="temp">8° / 1°</p>
+                              <div class="adviceArea">
+                                  <h5>朝夜は雨の心配なし</h5>
+                                  <p>かなり寒いです。できるだけ暖かくワイドパンツにコート、ストールで寒さ対策を</p>
+                              </div>
+                          </div>
+                          <div class="cordinateArea">
+                              <img src="images/tnql_illust/A010101_005.png" alt="コーディネイト">
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="btnToEvent"></div>
+                  <div class="prev arrow"><img src="images/arrow_left.svg" alt="left"></div>
+                  <div class="next arrow"><img src="images/arrow_right.svg" alt="right"></div>
+              </div>
+          </section>
+
+          <section id="tnqlCont2">
+              <div class="slectBase">
+                  <ul class="selectDay flxbox row">
+                      <li class="active">金曜日</li>
+                      <li>土曜日</li>
+                      <li>日曜日</li>
+                  </ul>
+              </div>
+              <ul class="hourWeather row">
+                  <li>
+                      <p class="hour">6時</p>
+                      <img src="images/wether_icon/icon_hour01.svg" alt="晴れ">
+                      <p class="temp">6°</p>
+                      <p class="precip">--</p>
+                  </li>
+                  <li>
+                      <p class="hour">7時</p>
+                      <img src="images/wether_icon/icon_hour02.svg" alt="曇り">
+                      <p class="temp">6°</p>
+                      <p class="precip">--</p>
+                  </li>
+                  <li>
+                      <p class="hour">8時</p>
+                      <img src="images/wether_icon/icon_hour02.svg" alt="曇り">
+                      <p class="temp">8°</p>
+                      <p class="precip">--</p>
+                  </li>
+                  <li>
+                      <p class="hour">9時</p>
+                      <img src="images/wether_icon/icon_hour03.svg" alt="雨">
+                      <p class="temp">6°</p>
+                      <p class="precip">0.5mm</p>
+                  </li>
+                  <li>
+                      <p class="hour">10時</p>
+                      <img src="images/wether_icon/icon_hour03.svg" alt="雨">
+                      <p class="temp">7°</p>
+                      <p class="precip">1mm</p>
+                  </li>
+                  <li>
+                      <p class="hour">11時</p>
+                      <img src="images/wether_icon/icon_hour04.svg" alt="雪">
+                      <p class="temp">3°</p>
+                      <p class="precip">1mm</p>
+                  </li>
+                  <li>
+                      <p class="hour">12時</p>
+                      <img src="images/wether_icon/icon_hour04.svg" alt="雪">
+                      <p class="temp">-1°</p>
+                      <p class="precip">2mm</p>
+                  </li>
+              </ul>
+            </section>
+
+            <section id="tnqlCont3">
+                <div class="row">
+                  <h4>週間天気</h4>
+                  <ul class="listWeekWether">
+                      <li>
+                          <p class="date">12月25日</p>
+                          <p class="dayOfWeek">水曜日</p>
+                          <img src="images/wether_icon/icon_day02_04.svg" alt="曇りのち晴れ">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月26日</p>
+                          <p class="dayOfWeek">木曜日</p>
+                          <img src="images/wether_icon/icon_day01_05.svg" alt="晴れのち雨">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月27日</p>
+                          <p class="dayOfWeek">金曜日</p>
+                          <img src="images/wether_icon/icon_day03_04.svg" alt="雨のち晴れ">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月28日</p>
+                          <p class="dayOfWeek">土曜日</p>
+                          <img src="images/wether_icon/icon_day01_01.svg" alt="晴れときどき曇り">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月29日</p>
+                          <p class="dayOfWeek">日曜日</p>
+                          <img src="images/wether_icon/icon_day01_01.svg" alt="晴れときどき曇り">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月30日</p>
+                          <p class="dayOfWeek">月曜日</p>
+                          <img src="images/wether_icon/icon_day02_00.svg" alt="曇り">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                      <li>
+                          <p class="date">12月31日</p>
+                          <p class="dayOfWeek">火曜日</p>
+                          <img src="images/wether_icon/icon_day02_01.svg" alt="曇りときどき晴れ">
+                          <p class="tempH">8°</p>
+                          <p class="tempL">-1°</p>
+                      </li>
+                  </ul>
+                </div>
+            </section>
+
+            <div class="footerTnql">
+                <div class="row">
+                    <img src="images/TNQL_logo_white@2x.png" alt="TNQL">&copy;2020 Le Grand Co,Ltd
+                </div>
+          </div>
+          
+      </main><!-- ページコンテンツここまで -->
+
+<!-- 共通フッターここから -->
+      <footer>
+
+          <div id="footer01" class="pcOnly">
+              <nav id="siteMap" class="row flxbox">
+                  <ul>
+                      <h4>観る</h4>
+                      <li class="navLev2"><a href="#">建築物</a></li>
+                      <li class="navLev2"><a href="#">自然・景観</a></li>
+                      <li class="navLev2"><a href="#">文化・芸術</a></li>
+                      <li class="navLev2"><a href="#">神社・仏閣</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>食べる</h4>
+                      <li class="navLev2"><a href="#">居酒屋・バー</a></li>
+                      <li class="navLev2"><a href="#">ラーメン</a></li>
+                      <li class="navLev2"><a href="#">カフェ・スイーツ</a></li>
+                      <li class="navLev2"><a href="#">和食</a></li>
+                      <li class="navLev2"><a href="#">洋食</a></li>
+                      <li class="navLev2"><a href="#">海外料理</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>遊ぶ</h4>
+                      <li class="navLev2"><a href="#">アウトドア</a></li>
+                      <li class="navLev2"><a href="#">人・生活</a></li>
+                      <li class="navLev2"><a href="#">体験イベント</a></li>
+                      <li class="navLev2"><a href="#">歴史</a></li>
+                      <li class="navLev2"><a href="#">祭り・行事</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>泊まる</h4>
+                      <li class="navLev2"><a href="#">旅館・ホテル</a></li>
+                      <li class="navLev2"><a href="#">民泊・ゲストハウス</a></li>
+                      <li class="navLev2"><a href="#">貸別荘</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <h4>買う</h4>
+                      <li class="navLev2"><a href="#">お土産</a></li>
+                      <li class="navLev2"><a href="#">雑貨・民芸品</a></li>
+                      <li class="navLev2"><a href="#">その他</a></li>
+                  </ul>
+                  <ul>
+                      <li class="navLev1"><a href="#">吉野カレンダー</a></li>
+                      <li class="navLev1"><a href="#">アクセス</a></li>
+                      <li class="navLev1"><a href="#">オンラインショップ</a></li>
+                      <li class="navLev1"><a href="#">外国人旅行者の方へ</a></li>
+                      <li class="navLev2"><a href="#">吉野旅行の基本情報</a></li>
+                      <li class="navLev2"><a href="#">日本のマナー・習慣</a></li>
+                  </ul>
+                  <ul>
+                      <li class="navLev3"><a href="#">外部リンク集</a></li>
+                      <li class="navLev3"><a href="#">お問い合わせ</a></li>
+                      <li class="navLev3"><a href="#">利用規約・プライバシーポリシー</a></li>
+                  </ul>
+              </nav>
+          </div>
+
+          <div id="footer02">
+              <div id="organiz" class="flxbox row">
+                  <div class="ognzData">
+                      <h5>一般社団法人 吉野ビジターズビューロー</h5>
+                      <p>〒639-3111 奈良県吉野郡吉野町上市77-1</p>
+                      <p>
+                          <span class="phone">0746-34-2522</span>
+                          <span class="fax">0746-39-9238</span>
+                          <span class="email"><a href="mailto:info@yoshino-kankou.jp">info@yoshino-kankou.jp</a></span>
+                      </p>
+                  </div>
+                  <div class="ognzData">
+                      <h5>株式会社ルグラン</h5>
+                      <p>〒150-0042 東京都渋谷区宇田川町2-1 13F 1312</p>
+                      <p>
+                          <span class="phone">03-6416-9845</span>
+                          <span class="fax">03-6416-9846</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="trueFooter">&copy; Yoshino visitors Bureau, All Rights Reserved.</div>
+
+      </footer>
+
+      <!-- Sccript File -->
+      <script type="text/javascript" src="js/ofi.js"></script>	
+      <script>objectFitImages();</script>
+    
+  </body>
+</html>

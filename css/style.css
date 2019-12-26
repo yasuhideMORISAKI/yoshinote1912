@@ -160,9 +160,10 @@ header.header ul {
 
 /* Breadcrumbs */
 ul#breadcrumbs {
-    margin-bottom: 1em;
-    list-style: none;
-    font-size: 0.77rem;
+	margin-bottom: 1em;
+	padding-top: 0.8em;
+	list-style: none;
+	font-size: 0.77rem;
 }
 ul#breadcrumbs a {
     text-decoration: none;
@@ -366,7 +367,7 @@ nav#segMenuArea ul.submenu {
     padding-top: 0.7em;
     opacity: 1;
     visibility: visible;
-6}
+}
 
 nav#segMenuArea ul.submenu li a {
     color: #fff;
@@ -626,9 +627,6 @@ i.faverit {
 /* Title Contents */
 
 main.regulerPageCont {
-    margin-bottom: 2em;
-    padding-bottom: 4em;
-    padding-top: 1em;
 }
 #titContent {
     height: 444px;
@@ -786,7 +784,8 @@ main.regulerPageCont {
     opacity: 0.5;
 }
 .recomendList {
-    padding-top: 4em;
+	padding-top: 4em;
+	margin-bottom: 4em;
 }
 .recomendList h3 {
     margin-bottom: 1.4em;
@@ -797,6 +796,147 @@ main.regulerPageCont {
     letter-spacing: 0.1em;
     background-color: #D49820;
 }
+
+
+/* TNQL Page */
+
+.titPageTnql {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.titPageTnql h2 {
+    font-size: 2rem;
+    line-height: 140%;
+}
+.cordinateArea {
+    position: relative;
+}
+.cordinateArea .arrow {
+    margin-top: -21px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.cordinateArea .arrow:hover {
+    opacity: 1;
+}
+.cordinateArea .prev {
+    left:0em;
+}
+.cordinateArea .next {
+    right: 0em;
+}
+ul#tenqlCordinate {
+	width: 92%;
+    height: 512px;
+	padding-left: 2em;
+	padding-right: 0em;
+	margin-bottom: 3em;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url("../images/tnql_illust/AdobeStock_56683340_Preview.jpeg");
+	background-size: cover;
+    align-items: center;
+}
+ul#tenqlCordinate li {
+    padding-top: 1em;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul#tenqlCordinate li .weatherArea {
+    width: 30%;
+    padding:1em;
+    text-align: center;
+    background-color: rgba(255,255,255,0.80);
+    border-radius: 1em;
+}
+ul#tenqlCordinate li .weatherArea h4 {
+    margin-bottom: 0.4em;
+    font-size: 1.25rem;
+}
+ul#tenqlCordinate li .weatherArea p.date {
+    font-size: 1.25rem;
+}
+ul#tenqlCordinate li .cordinateArea {
+    width: 50%;
+}
+ul#tenqlCordinate li .cordinateArea img {
+    width: 100%;
+}
+ul#tenqlCordinate li .adviceArea {
+    margin-top: 1em;
+    padding-top: 1em;
+    font-size: 0.88rem;
+    border-top: thin dotted #bbb;
+}
+#tnqlCont2, #tnqlCont3 {
+    padding-bottom: 2em;
+    color: #fff;
+    background-color: #555;
+}
+#tnqlCont2 .slectBase {
+    background-color: #aaa;
+}
+#tnqlCont2 .slectBase ul.selectDay {
+    list-style: none;
+}
+#tnqlCont2 .slectBase ul.selectDay li {
+    width: 33.33%;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    text-align: center;cursor: pointer;
+}
+#tnqlCont2 .slectBase ul.selectDay li.active,#tnqlCont2 .slectBase ul.selectDay li:hover {
+    background-color: #555;
+}
+#tnqlCont2 ul.hourWeather {
+    padding: 2em 0em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#tnqlCont2 ul.hourWeather li {
+    text-align: center;
+    font-size: 0.88rem;
+    line-height: 160%;
+}
+#tnqlCont2 ul.hourWeather li img {
+    width: 80%;
+    height: auto;
+}
+#tnqlCont3 h4 {
+    padding-bottom: 1em;
+    padding-left: 0.8em;
+    border-bottom: thin solid #888;
+}
+#tnqlCont3 ul.listWeekWether li {
+    padding: 0.4em 0.8em;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: thin dotted #888;
+}
+#tnqlCont3 ul.listWeekWether li img {
+    width: 14%;
+}
+.footerTnql {
+    padding-bottom: 0.8em;
+    padding-top: 0.4em;
+    color: #bbb;
+    font-size: 0.77rem;
+    background-color: #333;
+}
+.footerTnql img {
+    width: 6%;
+    margin-right:0.6em;
+    vertical-align: middle;
+}
+
 
 
 /* タブレットサイズ対応 */
@@ -909,6 +1049,9 @@ main.regulerPageCont {
     }
     #titContent {
         height:46vw;
+    }
+    ul#tenqlCordinate {
+        height: 50vw;
     }
     
 }
