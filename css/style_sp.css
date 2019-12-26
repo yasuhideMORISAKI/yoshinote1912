@@ -11,6 +11,9 @@
     body {
         position: relative;
     }
+    body.regulerPage {
+        overflow-x: hidden;
+    }
     .pcOnly {
         display: none;
     }
@@ -404,7 +407,9 @@
     /* TNQL page */
     ul#tenqlCordinate {
         height:auto;
+        width: 86%;
         padding-left: 0.4em;
+        padding-bottom: 4em;
         padding-right: 0.4em;
     }
     ul#tenqlCordinate li {
@@ -421,5 +426,13 @@
     }
     ul#tenqlCordinate li .cordinateArea {
         width: 100vw;
+    }
+    .btnToEvent {
+        margin-right: -35%;
+        width: 70%;
+        right: 50%;
+    }
+    .btnToEvent i img {
+        width: 6vw;
     }
 }

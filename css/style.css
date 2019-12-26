@@ -846,7 +846,6 @@ ul#tenqlCordinate li {
     line-height: 160%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 ul#tenqlCordinate li .weatherArea {
     width: 30%;
@@ -935,6 +934,31 @@ ul#tenqlCordinate li .adviceArea {
     width: 6%;
     margin-right:0.6em;
     vertical-align: middle;
+}
+.btnToEvent {
+    width: 16em;;
+    height: 3em;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    background-color: #99C443;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    position: absolute;
+    right: 5em;
+    bottom: 2em;
+    cursor: pointer;
+}
+.btnToEvent:hover {
+    opacity: 0.5;
+}
+.btnToEvent i {
+    margin-right: 0.4em;
+}
+.btnToEvent i img {
+    width: 28px;
 }
 
 
@@ -1052,6 +1076,9 @@ ul#tenqlCordinate li .adviceArea {
     }
     ul#tenqlCordinate {
         height: 50vw;
+    }
+    .btnToEvent i img {
+        width: 2.6vw;
     }
     
 }
