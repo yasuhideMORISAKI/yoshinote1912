@@ -395,6 +395,18 @@
         font-weight: 600;
     }
     
+    /* Calender Page */
+    #calenderArea li .calenderPC {
+        display: none;
+    }
+    #calenderArea li .calenderSP {
+        display: block;
+    }
+    #calenderArea li .calenderSP img {
+        width: 100%;
+    }
+    
+    
     /* Footer */
     footer #footer02 #organiz {
         flex-direction: column;
@@ -434,5 +446,9 @@
     }
     .btnToEvent i img {
         width: 6vw;
+    }
+    .footerTnql img {
+        width: 14%;
+        vertical-align: middle;
     }
 }
