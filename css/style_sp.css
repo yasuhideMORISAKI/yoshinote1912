@@ -35,6 +35,9 @@
     .box .copyArea {
         height: 18vw;
     }
+    .flxbox.sp1clm {
+        flex-direction: column;
+    }
     
     /* Header*/
     
@@ -86,30 +89,66 @@
         background-image: url("../images/icon_topic.svg");
     }
     
+    /* Font Size Button */
+    #btnFontsize {
+        display: none;
+    }
+    
+    
     /* Segment Menu */
     
     nav#segMenuArea {
-        height: 4.4em;
+        height: auto;
         padding: 0.2em 0em;
         justify-content: space-between;
     }
-    nav#segMenuArea ul#segMenu {
+    nav#segMenuArea ul {
         width: 100%;
         padding-right: 0em;
     }
-    ul#segMenu li.upperMenu label.acd-label {
-        height: 2.4em;
+    nav#segMenuArea i.iconSegment {
+        font-size: 1rem;
+        margin-right: 0.2em;
     }
-    body.regulerPage nav#segMenuArea ul#segMenu li.upperMenu:first-child label.acd-label {
-        border-left:none;
+    .dropmenu li.upperMenu {
+        position: static;    
     }
-    ul#segMenu li.upperMenu:last-child label.acd-label {
+    .dropmenu {
+        width: 100%;
+        padding-right: 0em;
+        position:relative;
+    }
+    nav#segMenuArea div > ul {
+        width: 100%;
+        margin: 0;
+    }
+    .dropmenu li.upperMenu:last-child {
         border-right:none;
     }
-    ul#segMenu li.upperMenu i.iconExpand {
-        display: block;
-        margin-left: 35%;
-        margin-top: 0.2em;
+    body.regulerPage .dropmenu li.upperMenu:first-child {
+        border-left: none;
+    }
+    .dropmenu li.upperMenu a {
+        font-size: 0.8rem;
+        padding: 0.2em 0em;
+    }
+    .dropmenu li.upperMenu ul {
+        width:100vw;
+        left:0%;
+        background-color:#A28E64;
+    }
+    .dropmenu li.upperMenu ul li {
+        width:auto;
+    }
+    .dropmenu li.upperMenu ul li a {
+        font-size:0.8rem;
+        border-right: thin solid rgba(255,255,255,0.2);
+        border-top: thin solid rgba(255,255,255,0.2);
+        background: rgba(0,0,0,0.2);
+    }
+    .dropmenu#normal li:hover ul{
+        display: flex;
+        flex-wrap:wrap
     }
     
     /* Slide Menu */
@@ -121,19 +160,21 @@
         position: fixed;
         top:1em;
         right: 1em;
+        z-index:20000;
     }
     #spMenu #slideMenu {
-	width: 70vw;
-	height: 100%;
-	padding: 1em;
-	position: fixed;
-	top: 0;
-	right: -80vw;
-	background-color: rgba(255,255,255,0.94);
-	z-index: 100;
-	transition: left .5s, right .5s; /* アニメーション */
-	-webkit-box-shadow: 1px 0px 24px rgba(0,0,0,0.6);
-	box-shadow: 1px 0px 24px rgba(0,0,0,0.6);
+        width: 70vw;
+        height: 100%;
+        overflow-y: auto;
+        padding: 1em;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        background-color: rgba(255,255,255,0.94);
+        z-index: 40000;
+        transition: left .5s, right .5s; /* アニメーション */
+        -webkit-box-shadow: 1px 0px 24px rgba(0,0,0,0.6);
+        box-shadow: 1px 0px 24px rgba(0,0,0,0.6);
     }
     #spMenu #slideMenu label.toggle {
         position: absolute;
@@ -258,6 +299,7 @@
         top:0.8em;
     }
     #btnLoginSp {
+        margin-bottom: 2em;
         padding-bottom: 0.8em;
         padding-top: 0.8em;
         color: #fff;
@@ -297,6 +339,12 @@
         width: 6vw;
         height: 6vw;
         opacity: 0.3;
+    }
+    #titContent .titBase .voitFavorite img.icon_heart:hover {
+        opacity: 1;
+    }
+    #titContent .titBase .voitFavorite i.favorit {
+        display: none;
     }
     .regulerPageCont .contentsArea {
         flex-direction: column;
@@ -364,12 +412,13 @@
     }
     
     /* TNQL sp */
-    #bunnerTNQLsp {
-        width: 82%;
-        padding: 2% 4% ;
+    #bunnerTNQLsp a {
+        width: 92%;
+        padding: 0% 4% ;
         color: #fff;
         background-color: #62C0DD;
         display: flex;
+        text-decoration: none;
         align-items: center;
         justify-content: space-between;
         border-radius: 8px;
@@ -379,7 +428,7 @@
         width:16vw;
         height: auto;
     }
-    #bunnerTNQLsp #logoTNQL img {
+    #bunnerTNQLsp #logoTNQLsp img {
         width: 12vw
     }
     #bunnerTNQLsp h3 {
@@ -450,5 +499,26 @@
     .footerTnql img {
         width: 14%;
         vertical-align: middle;
+    }
+    
+    /* Access Page */
+    #busRoute #basRouteMap {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #busRoute #basRouteSeason {
+        width: 100%;
+    }
+    #busRoute #basRouteSeason img.tsujyo {
+        width: 48%;
+        margin-left: 26%;
+    }
+    #busRoute #basRouteSeason img.kanouki {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .busTimeTable {
+        width: 100%;
+        margin-bottom: 1em;
     }
 }

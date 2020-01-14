@@ -2,10 +2,11 @@
 /* CSS Document */
 
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    position: relative;
 }
 html, body {
-    font-size: 16px;
     color: #333;
 }
 .row {
@@ -19,6 +20,25 @@ html, body {
 .spOnly {
     display: none;
 }
+.padd2em {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.padd3em {
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+.padd4em {
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 /* Header 共通 */
 
@@ -151,11 +171,57 @@ header.header ul {
     position: absolute;
     left: -2em;
     top: -0.5em;
-    background-image: url("../images/icon_ favorite.svg");
+    background-image: url("../images/icon_favorite.svg");
     background-size: 100% auto;
 }
 
 /* Segment Icon */
+
+
+/* 文字サイズボタン */
+#btnFontsize {
+	position: fixed;
+	right: 0;
+	top: 228px;
+	display: flex;
+	background-color: #D49820;
+	border-radius: 4px 0px 0px 4px;
+	border-left: thin solid #D49820;
+	border-right: thin none #D49820;
+	border-bottom: thin solid #D49820;
+	border-top: thin solid #D49820;
+    transform: translateX(1.6em);
+    transition-duration:.5s;
+}
+#btnFontsize:hover {
+    transform: translateX(0em);
+}
+#btnFontsize h5 {
+    padding-bottom: 0.2em;
+    padding-top: 0.4em;
+    writing-mode: vertical-rl;
+    font-size: 0.81rem;
+    color: #fff;
+}
+#btnFontsize .hideBtn {
+    width: 1.6em;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-content: space-between;
+}
+#btnFontsize .hideBtn .btnF {
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: #fff;
+    border: none;
+    color:  #D49820;
+    font-size: 0.81rem;
+    border-radius: 0px;
+}
+#btnFontsize .hideBtn .btnF:hover, #btnFontsize .hideBtn .btnF.active {
+    font-weight: 700;
+}
 
 
 /* Breadcrumbs */
@@ -206,6 +272,12 @@ section#topTitTopPage #topVisualArea img {
 	box-sizing: border-box;
     justify-content: space-between;
 }
+#topVisualArea #btnRecomend a {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #topVisualArea #btnRecomend:hover {
     cursor: pointer;
     opacity: 0.5;
@@ -240,11 +312,12 @@ align-items: center;}
     left: 0em;
     top: 50%;
 }
-#topVisualArea #bunnerTNQL {
+#topVisualArea #bunnerTNQL a {
 	width: 112px;
     padding:0.6em 0.2em;
 	color: #fff;
 	text-align: center;
+    text-decoration: none;
 	position: absolute;
 	left: 0.5em;
 	top: 0.5em;
@@ -282,6 +355,220 @@ align-items: center;}
 }
 
 
+/* Access Page */
+
+.accessChart ul.tab {
+    list-style: none;
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    background-color: #BBBBBB;
+}
+.accessChart ul.tab li {
+    width: 50%;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;
+    text-align: center;
+    cursor: pointer;
+}
+.accessChart ul.tab li#tabTrain.current, .accessChart ul.tab li#tabTrainSP.current {
+    background-color: #99C443;
+}
+.accessChart ul.tab li#tabCar.current, .accessChart ul.tab li#tabCarSP.current {
+    background-color: #D49820;
+}
+.accessChart ul.tabContent {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-align: center;
+    list-style: none;
+    background-color: #f2f2f2;
+}
+.accessChart ul.tabContent li {
+    display: none;
+}
+.accessChart ul.tabContent li.current {
+    display: block;
+}
+.titAccess {
+    padding-bottom: 1.6em;
+}
+.titAccess h2 {
+    font-size: 1.125rem;
+}
+.titAccess h3 {
+    margin-top: 0.2em;
+    padding-top:0.2em;
+    font-size: 1.75rem;
+    border-top: thin solid #707070;
+}
+#busRoute {
+    justify-content: space-between;
+}
+#busRoute #basRouteMap {
+    width: 64.1%;
+}
+#busRoute #basRouteMap img {
+    width: 100%;
+}
+#busRoute #basRouteSeason {
+    width: 32%;
+}
+#busRoute #basRouteSeason section {
+    margin-bottom: 2em;
+}
+#busRoute #basRouteSeason h4 {
+    margin-bottom: 0.6em;
+}
+#busRoute #basRouteSeason p {
+    line-height: 160%;
+    margin-bottom: 1em;
+}
+#busRoute #basRouteSeason img.tsujyo {
+    width: 68%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#busRoute #basRouteSeason img.kanouki {
+    width: 100%;
+    height: auto;
+}
+.busTimeTableArea h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+}
+.busTimeTableArea p {
+    line-height: 160%;
+    margin-bottom: 0.6em;
+}
+.busTimeTableArea p.spec {
+    font-size: 0.875rem;
+}
+.busTimeTableArea .flxbox {
+    justify-content: space-between;
+}
+.busTimeTable {
+    width: 48%;
+}
+.busTimeTable h5 {
+    font-weight: 300;
+    margin-bottom: 0.6em;
+}
+.busTimeTable table {
+    width: 100%;
+    border-left: thin solid #aaa;
+    border-top:  thin solid #aaa;
+    font-size: 0.875rem;
+}
+.busTimeTable table td, .busTimeTable table th {
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
+    border-bottom: thin solid #aaa;
+    border-right: thin solid #aaa;
+    text-align: center;
+    vertical-align: middle;
+}
+.busTimeTable table th {
+    background-color:#f2f2f2;
+}
+
+
+/* Segment Menu Area Plus */
+
+nav#segMenuArea i.iconExpand {
+    width: 24px;
+    height: 24px;
+    content: '';
+    display: inline-block;
+    background-image: url("../images/expand_more.svg");
+    vertical-align:middle;
+    background-size: 24px 24px;
+}
+nav#segMenuArea i.iconSegment {
+    font-size: 1.2rem;
+    margin-right: 0.4em;
+    vertical-align:middle;
+}
+.dropmenu{
+    width: 76%;
+    padding-left: 0em;
+    padding-right: 2em;
+    padding-top: 0.3em;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dropmenu li.upperMenu{
+    position: relative;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+    border-right: thin solid #fff;
+}
+body.regulerPage .dropmenu li.upperMenu:first-child {
+    border-left: thin solid #fff;
+}
+.dropmenu li.upperMenu a{
+  height: 100%;
+  padding: 0.4em 0em;
+  display: block;
+  margin: 0;
+  color: #fff;
+  font-size: 0.88rem;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} 
+.dropmenu li.upperMenu ul{
+  width:100%;
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li.upperMenu ul li{
+  width: 100%;
+}
+
+.dropmenu li.upperMenu ul li a{
+  padding: 0.8em 1em;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.6);
+  text-align: left;
+    font-size: 0.76rem;
+}
+.dropmenu li.upperMenu:hover > a{
+  background: rgba(0,0,0,0.2);
+}
+.dropmenu li.upperMenu ul li a:hover{
+  background: #555;
+}
+.dropmenu#normal li ul{
+  display: none;
+}
+.dropmenu#normal li:hover ul{
+  display: block;
+}
+.dropmenu#fade-in2 li ul{
+  opacity: 0;
+  top: 50%;
+  visibility: hidden;
+  transition: .5s;
+}
+.dropmenu#fade-in2 li:hover ul{
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 /* Segment Menu Area */
 
 nav#segMenuArea {
@@ -294,89 +581,9 @@ nav#segMenuArea {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-ul#segMenu {
-    width: 76%;
-    padding-left: 0em;
-    padding-right: 2em;
-    padding-top: 0.3em;
-    text-align: center;
-    font-size: 0.88rem;
-}
-ul#segMenu .acd-check{
-    display: none;
-}
-ul#segMenu li.upperMenu {
-    width:19%;
-    display: block;
-}
-ul#segMenu li.upperMenu label.acd-label {
-    width: auto;
-    height: 1.6em;
-    padding: 0.6em 0em;
-    display: block;
-    border-right: thin solid #fff;
-}
-ul#segMenu li.upperMenu label.acd-label:hover {
-    cursor: pointer;
-}
-label.acd-label i.iconSegment {
-    font-size: 1.2rem;
-    margin-right: 0.4em;
-    vertical-align:middle;
-}
-label.acd-label i.iconExpand {
-    width: 24px;
-    height: 24px;
-    content: '';
-    display: inline-block;
-    background-image: url("../images/expand_more.svg");
-    vertical-align:middle;
-    background-size: 24px 24px;
-}
 body.regulerPage nav#segMenuArea .flxbox {
     justify-content: space-between;
  }
-body.regulerPage nav#segMenuArea ul#segMenu li.upperMenu:first-child label.acd-label {
-    border-left:thin solid #fff;
-}
-nav#segMenuArea ul.submenu {
-    width: 100%;
-    margin-top: 0em;
-    padding: 0em 0.8em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-    text-align: left;
-    font-size: 0.81rem;
-    background-color: rgba(0,0,0,0.60);
-    position: relative;
-    z-index: 10;
-}
-.acd-content li{
-    max-height: 0;
-    opacity: 0;
-    transition: .5s;
-    visibility: hidden;
-}
-#acd-check1:checked ~ ul#acd-List1 li,
-#acd-check2:checked ~ ul#acd-List2 li,
-#acd-check3:checked ~ ul#acd-List3 li,
-#acd-check4:checked ~ ul#acd-List4 li,
-#acd-check5:checked ~ ul#acd-List5 li {
-    max-height:10em;
-    padding-bottom: 0.7em;
-    padding-top: 0.7em;
-    opacity: 1;
-    visibility: visible;
-}
-
-nav#segMenuArea ul.submenu li a {
-    color: #fff;
-    text-decoration: none;
-}
-nav#segMenuArea ul.submenu li a:hover {
-    text-decoration: underline;
-}
 
 #searchBox  {
     width: 20%;
@@ -394,8 +601,6 @@ nav#segMenuArea ul.submenu li a:hover {
     width: 100%;
     overflow: hidden;
     background-color: #fff;
-}
-body.regulerPage #searchBox {
 }
 .search_container input[type="text"]{
   border: none;
@@ -676,14 +881,20 @@ main.regulerPageCont {
     font-size: 0.81rem;
     text-align: center;
 }
-#titContent .titBase .voitFavorite img.icon_heart {
+#titContent .titBase .voitFavorite i.favorit {
     width: 32px;
-    height: auto;
-    margin-bottom: 0.6em;
-}
-#titContent .titBase .voitFavorite img.icon_heart:hover {
-    cursor: pointer;
+    height: 28px;
+    margin-bottom: 0.4em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/icon_favorite_white.svg");
+    display: block;
     opacity: 0.5;
+}
+#titContent .titBase .voitFavorite i.favorit:hover {
+    cursor: pointer;
+    background-image: url("../images/Icon_favorite_32or.svg");
+    opacity: 1;
 }
 
 
@@ -1034,8 +1245,8 @@ ul#calenderArea li .calenderPC img {
 
 @media screen and (max-width:1026px){
     
-    html,body {
-        font-size: 1.6vw;
+    html, body {
+        font-size: 13px;
     }
     .row {
         width:96%;
@@ -1064,6 +1275,10 @@ ul#calenderArea li .calenderPC img {
     }
     .box.col2 .imgArea {
         height: 42.6vw;
+    }
+    /* Font Size Button */
+    #btnFontsize {
+        display: none;
     }
     header.header {
         height: 12.8vw;
@@ -1125,11 +1340,13 @@ ul#calenderArea li .calenderPC img {
     }
     nav#segMenuArea {
         width: 100%;
+        padding-left: 0;
     }
-    nav#segMenuArea ul#segMenu {
-        width: 76%;
+    nav#segMenuArea div > ul {
+        width: 80%;
+        margin: 0;
     }
-    nav#segMenuArea ul#segMenu li.upperMenu {
+    nav#segMenuArea ul li.upperMenu {
         width: 20%;
     }
     #searchBox {
@@ -1146,6 +1363,9 @@ ul#calenderArea li .calenderPC img {
     }
     .btnToEvent i img {
         width: 2.6vw;
+    }
+    .accessChart ul.tabContent li img {
+        width: 90vw;
     }
     
 }
