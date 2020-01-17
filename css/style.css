@@ -122,7 +122,7 @@ header.header ul {
 #gMenuPC2 li {
     margin-left: 3.4em;
     position: relative;
-    font-size: 0.81rem;
+    font-size: 0.75rem;
 }
 #gMenuPC2 #btnCalender::before {
     width: 24px;
@@ -804,7 +804,7 @@ i.faverit {
     position: absolute;
     right: 0.4em;
     bottom:0.4em;
-    background-image: url("../images/icon_ favorite_s.svg");
+    background-image: url("../images/icon_favorite_s.svg");
     background-size: 100% auto;
 }
 .col1 {
@@ -1008,6 +1008,68 @@ main.regulerPageCont {
     letter-spacing: 0.1em;
     background-color: #D49820;
 }
+
+/* Contents List Page */
+
+.contListArea .flxbox {
+    justify-content: space-between;
+}
+aside.categlyList {
+    width: 288px;
+}
+aside.categlyList h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+aside.categlyList h4 i.iconSegment {
+    margin-right: 0.4em;
+    font-size:1.75rem;
+    vertical-align: middle;
+}
+aside.categlyList ul {
+    padding-left: 0em;
+    list-style: none;
+}
+aside.categlyList ul li {
+    padding-bottom: 0.8em;
+    padding-left: 0.8em;
+    padding-top: 0.8em;
+    font-size: 0.88rem;
+    border-bottom: thin dotted #aaa;
+}
+aside.categlyList ul li a {
+    text-decoration: none;
+    color: #333;
+}
+aside.categlyList ul li a:hover, aside.categlyList ul li a.current  {
+    color: #996E17;
+    font-weight: 700;
+}
+ul.pager {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+ul.pager li {
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0.2em;
+    display: flex;
+    color: #333;
+    font-size: 0.88rem;
+    border:thin solid #333;
+    justify-content: center;
+    align-items: center;
+}
+ul.pager li.current, ul.pager li:hover {
+    color: #fff;
+    font-weight: 700;
+    background-color: #333;
+}
+
 
 
 /* TNQL Page */
@@ -1240,6 +1302,68 @@ ul#calenderArea li .calenderPC img {
 }
 
 
+/* Register Form */
+
+ul#registration {
+    margin:0em 4% 4em;
+    padding: 4em;
+    list-style: none;
+    background-color: #f2f2f2;
+}
+ul#registration li {
+    padding: 0.4em;
+    text-align: center;
+}
+ul#registration li input[type="email"], ul#registration li input[type="password"] {
+    width:30em;
+    padding: 0.6em;
+    font-size: 1rem;
+}
+ul#registration li p {
+    padding: 1em 0em;
+    font-size: 0.8rem;
+    line-height: 160%;
+}
+p#toLogin a {
+    margin-bottom: 0.4em;
+    margin-right: 4%;
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 0.8rem;
+}
+p#toLogin a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+ul#registration li input[type="submit"] {
+    margin: 2em 0em 0em;
+    padding: 0.4em 3em;
+    color: #fff;
+    font-size: .88rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 0;
+    background-color: #99C443;
+}
+ul#registration li input[type="submit"]:hover, ul#registration li .btnToTop a:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+ul#registration li .btnToTop a {
+    padding: 0.4em 3em;
+    display: inline-block;
+    color: #fff;
+    font-size: .88rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    background-color: #99C443;
+}
+
+
 
 /* タブレットサイズ対応 */
 
@@ -1366,6 +1490,9 @@ ul#calenderArea li .calenderPC img {
     }
     .accessChart ul.tabContent li img {
         width: 90vw;
+    }
+    aside.categlyList {
+        width: 28vw;
     }
     
 }
