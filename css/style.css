@@ -244,7 +244,7 @@ ul#breadcrumbs a:hover {
 /* Top Page Top Visual */
 
 section#topTitTopPage {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 section#topTitTopPage #topVisualArea {
 	width: 100%;
@@ -532,6 +532,7 @@ body.regulerPage .dropmenu li.upperMenu:first-child {
   left: 0;
   margin: 0;
   padding: 0;
+    background-color: rgba(255,255,255,0.6);
 }
 .dropmenu li.upperMenu ul li{
   width: 100%;
@@ -551,7 +552,7 @@ body.regulerPage .dropmenu li.upperMenu:first-child {
   background: #555;
 }
 .dropmenu#normal li ul{
-  display: none;;
+  display: none;
 }
 /*.dropmenu#normal li:hover ul{
   display: block;
@@ -721,11 +722,11 @@ footer #trueFooter {
 /* Content Box */
 
 section.topList {
-    padding-top:2em;
-    padding-bottom: 2em;
+    padding-top:0em;
+    padding-bottom: 1em;
 }
 section.topList h3 {
-    margin-bottom: 2.2em;
+    margin-bottom: 1em;
     color: #99C443;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
@@ -914,8 +915,8 @@ main.regulerPageCont {
     font-family: 'object-fit: cover;'; /*object-fit　IE11対策*/
 }
 .contentsArea article#mainContent .photoSpace img.portrait {
-    width: 428px;
-    height: 640px;
+    width: 640px;
+    height: 852px;
     object-fit: cover;
     font-family: 'object-fit: cover;'; /*object-fit　IE11対策*/
 }
@@ -1356,6 +1357,8 @@ ul#registration li .btnToTop a {
     letter-spacing: 0.1em;
     background-color: #99C443;
 }
+body {
+}
 
 
 
@@ -1487,6 +1490,14 @@ ul#registration li .btnToTop a {
     }
     aside.categlyList {
         width: 28vw;
+    }
+    .contentsArea article#mainContent .photoSpace img.landscape {
+        width: 100%;
+        height: 42vw;
+    }
+    .contentsArea article#mainContent .photoSpace img.portrait {
+        width: 100%;
+        height: 85vw;
     }
     
 }
