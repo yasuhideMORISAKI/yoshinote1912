@@ -6,7 +6,7 @@
     
     
     html, body {
-        font-size: 13px;
+        font-size: 14px;
     }
     body {
         position: relative;
@@ -129,26 +129,34 @@
         border-left: none;
     }
     .dropmenu li.upperMenu a {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
         padding: 0.2em 0em;
     }
     .dropmenu li.upperMenu ul {
         width:100vw;
         left:0%;
-        background-color:#A28E64;
     }
     .dropmenu li.upperMenu ul li {
         width:auto;
     }
     .dropmenu li.upperMenu ul li a {
-        font-size:0.8rem;
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        font-size:0.86rem;
         border-right: thin solid rgba(255,255,255,0.2);
         border-top: thin solid rgba(255,255,255,0.2);
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.8);
     }
-    .dropmenu#normal li:hover ul{
+    /*.dropmenu#normal li:hover ul{
         display: flex;
         flex-wrap:wrap
+    }*/
+    .dropmenu#normal ul {
+        display: flex;
+        flex-wrap:wrap
+    }
+    .dropmenu li.upperMenu:hover > a{
+      background: none;
     }
     
     /* Slide Menu */
@@ -170,7 +178,7 @@
         position: fixed;
         top: 0;
         right: -80vw;
-        background-color: rgba(255,255,255,0.94);
+        background-color: rgba(255,255,255,0.96);
         z-index: 40000;
         transition: left .5s, right .5s; /* アニメーション */
         -webkit-box-shadow: 1px 0px 24px rgba(0,0,0,0.6);
@@ -189,11 +197,14 @@
         padding-bottom: 1em;
     }
     #slideMenu > ul > li {
-        padding: 0.6em 0.6em 0.2em 0.6em;;
-        border-bottom: thin dotted #ddd;
+        border-bottom: thin dotted #bbb;
     }
     #slideMenu > ul > li:first-child {
-        border-top: thin dotted #ddd;
+        border-top: thin dotted #bbb;
+    }
+    #slideMenu ul li.lev1 {
+        padding: 0.4em 0.6em 0em 0.6em;
+        font-size: 0.92rem;
     }
     #slideMenu ul li label {
         width: 100%;
@@ -221,8 +232,9 @@
     }
     #slideMenu ul li ul.hideSumbMenue {
         padding-top: 0.4em;
-        font-size: 0.77rem;
-        line-height: 180%;
+        padding-bottom: 0.2em;
+        font-size: 0.86rem;
+        line-height: 220%;
         padding-left: 1em;
     }
     #slideMenu ul li ul.hideSumbMenue li {
@@ -230,10 +242,11 @@
         overflow-y: hidden;
         opacity: 0;
         transition: all 0.5s;
+        border-top: thin dotted #ccc;
     }
     #slideMenu ul li.lev2 {
-        padding: 0.4em 0.9em;
-        font-size: 0.85rem;
+        padding: 0.7em 0.8em;
+        font-size: 0.86rem;
         font-weight: 600;
     }
     #slideMenu ul li.lev2 i {
@@ -247,7 +260,7 @@
     }
     #slideMenu ul li.lev3 {
         padding: 0.8em 0.8em;
-        font-size: 0.77rem;
+        font-size: 0.86rem;
     }
     #sldMenu_bar1:checked ~ ul#hList01 li,
     #sldMenu_bar2:checked ~ ul#hList02 li,
@@ -260,8 +273,25 @@
     #searchBoxSp {
         margin-bottom: 0.6em;
     }
+    #searchBoxSp .search_container {
+        padding-bottom: 0.2em;
+        padding-top: 0.2em;
+    }
+    #searchBoxSp input[type="text"] {
+        font-size: 0.86rem;
+    }
     #searchBoxSp input[type="submit"] {
+        width: 12px;
+        height: 12px;
+        margin-top: -6px;
+        content: '';
+        position: absolute;
+        right: 0.6em;
+        top: 50%;
+        background-image: url("../images/search.svg");
+        background-size: 12px 12px;
         background-color: #fff;
+        background-repeat: no-repeat;
         border: none;
         border-radius: 0;
     }
@@ -308,7 +338,7 @@
         padding-bottom: 0.8em;
         padding-top: 0.8em;
         color: #fff;
-        font-size: 0.85rem;
+        font-size: 0.86rem;
         text-align: center;
         background-color: rgba(212,152,32,0.60);
     }
@@ -432,7 +462,7 @@
         cursor: pointer;
     }
     #bunnerTNQLsp .iconWeather img {
-        width:16vw;
+        width:14vw;
         height: auto;
     }
     #bunnerTNQLsp #logoTNQLsp img {
@@ -443,7 +473,7 @@
         line-height: 140%;
     }
     #bunnerTNQLsp p.bunnCopy {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     #bunnerTNQLsp p.temperature {
         margin-bottom: 0.2em;
