@@ -1,4 +1,7 @@
+<<<<<<< HEAD
   
+=======
+>>>>>>> 65c83fa87d2c7c54aaade33757b4197915f567eb
 $(function(){
 	
     //.accordion2の中のp要素がクリックされたら
